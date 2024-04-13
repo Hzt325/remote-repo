@@ -132,8 +132,6 @@ void Key()
 void Oled_disp()
 {
 
-//	OLED_ShowNum(50,1,k210_data,1);
-//	OLED_ShowNum(50,2,Serial_RxPacket[0],1);
 	OLED_ShowTrace(xunji_vaule);
 	OLED_ShowPWM(pwm_left);
 	OLED_ShowNum(1, 1, tar_psoition_left, 1);
@@ -157,8 +155,8 @@ int main()
 {
 	delay_init(); 	                        
 	LED_Init();															
-  motor_init();                          
-  Serial_Init();    
+ 	motor_init();                          
+ 	Serial_Init();    
 	OLED_Init();   	
 	Key_Init();
 	Xunji_Init();

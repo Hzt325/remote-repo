@@ -1,0 +1,12 @@
+#ifndef __USART_H
+#define __USART_H
+#include "stdio.h"	
+#include "sys.h" 
+
+void usart2_init(u32 bound);
+
+void USART3_Init(void);
+
+#endif
+
+
